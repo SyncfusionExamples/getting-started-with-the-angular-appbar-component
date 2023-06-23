@@ -1,0 +1,74 @@
+<div class="align">
+  <div>
+    <h2>Simple AppBar</h2>
+  </div>
+  <ejs-appbar colorMode="Primary" position="Top">
+    <div style="float: left;">
+      <button ejs-button cssClass="e-inherit item" iconCss="e-icons e-menu"></button>
+      <span class="regular item">Essential Studio for Angular</span>
+      <div style="width: 300px; margin-top: 5px;" class="item">
+        <span class="e-input-group e-control-wrapper e-inherit">
+          <input type="text" class="e-searchinput e-input item" placeholder="Search">
+          <span class="e-icons e-search e-input-group-icon"></span>
+        </span>
+      </div>
+    </div>
+    <span class="e-appbar-spacer"></span>
+    <span class="e-appbar-separator"></span>
+    <a class="item" href="https://www.syncfusion.com/demos">Demos</a>
+    <a class="item" href="https://www.syncfusion.com/forums">Forum</a>
+    <a class="item" href="https://help.syncfusion.com/upgrade-guide">Upgrade</a>
+    <button ejs-button cssClass="e-inherit item" (click)="navigateToPage()">Free Trial</button>
+  </ejs-appbar>
+</div>
+
+<div class="align">
+  <div>
+    <h2>Prominent AppBar</h2>
+  </div>
+  <ejs-appbar colorMode="Primary" position="Top" mode="Prominent" cssClass="prominent-appbar">
+    <div style="float: left;">
+      <button ejs-button cssClass="e-inherit item" iconCss="e-icons e-menu"></button>
+      <span class="regular item prominent">Essential Studio for Angular with prominent mode</span>
+    </div>
+    <button ejs-button cssClass="e-inherit item" (click)="navigateToPage()">Free Trial</button>
+  </ejs-appbar>
+</div>
+
+<style>
+  .e-appbar .item{
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .e-appbar .e-btn .e-btn-icon{
+    font-size: 16px;
+  }
+
+  a{
+    font-size: 13px;
+    color: inherit;
+    letter-spacing: -.18px;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .e-appbar.prominent-appbar {
+    background-image: url('https://ej2.syncfusion.com/angular/demos/assets/appbar/images/prominent.png');
+    background-size: 100% 400px;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+
+  .prominent {
+    align-self: center;
+    white-space: break-spaces;
+    text-align: inherit;
+  }
+
+  .align {
+    margin-bottom: 10px;
+  }
+
+</style>
