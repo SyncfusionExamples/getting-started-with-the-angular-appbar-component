@@ -1,6 +1,5 @@
 # Getting Started with the Angular AppBar Component
 
-**Repository Description**  
 This repository provides a quick-start Angular sample that demonstrates how to integrate and customize the Syncfusion Angular AppBar component in an Angular application.
 
 A quick-start Angular project that contains example code to add the Syncfusion AppBar component. The sample demonstrates simple customization scenarios and key features such as changing the AppBar color, size, and position to match different layout requirements.
